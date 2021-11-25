@@ -1,14 +1,14 @@
-import { useState } from "react";
+import React from "react";
+import Card from "./components/Card";
 import List from "./components/List";
-import Form from "./components/Form";
 import "./App.css";
 
 function App() {
-  const [contacts, setContacts] = useState([]);
   return (
-    <div>
-      <List contacts={contacts} />
-      <Form setContacts={setContacts} />
+    <div className="App">
+      <Card title="My Card Title" content="Card Content" />
+      <hr />
+      <List title="My List Title" items={["Item 1", "Item 2", "Item 3"]} />
     </div>
   );
 }
