@@ -21,7 +21,8 @@ export default function Form({ setContacts }) {
 
   return (
     <div>
-      <form onSubmit={onFormSubmit}>
+      <h4>Add New Contact</h4>
+      <form onSubmit={onFormSubmit} autocomplete="off">
         <div>
           <input
             type="text"
@@ -42,7 +43,7 @@ export default function Form({ setContacts }) {
           />
         </div>
 
-        <div>
+        <div className="footer">
           <button>Add</button>
         </div>
       </form>

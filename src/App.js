@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   const [contacts, setContacts] = useState([]);
   return (
-    <div>
+    <div id="container">
       <List contacts={contacts} />
       <Form setContacts={setContacts} />
     </div>

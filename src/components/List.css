@@ -1,0 +1,11 @@
+.contactList li {
+  display: flex;
+  justify-content: space-between;
+}
+.contactList li:not(:first-child) {
+  border-top: 1px solid #b5b5b5;
+}
+.totalNumber {
+  margin-top: 4 px;
+  text-align: right;
+}
